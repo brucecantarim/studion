@@ -1,0 +1,27 @@
+{
+  "name": "studion",
+  "version": "0.0.1",
+  "description": "Homepage for Studion Events provider and services.",
+  "main": "src/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brucecantarim/studion.git"
+  },
+  "keywords": [
+    "HTML",
+    "CSS",
+    "Javascript"
+  ],
+  "author": "Bruce Cantarim",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brucecantarim/studion/issues"
+  },
+  "homepage": "https://github.com/brucecantarim/studion#readme",
+  "devDependencies": {
+    "live-server": "^1.2.1"
+  }
+}
