@@ -26,6 +26,7 @@ footer {
 
 .container {
   max-width: 1140px;
+  padding: 0 300px;
   margin: 0 auto;
 }
 
@@ -99,7 +100,7 @@ ul {
 
 .slide {
   position: relative;
-  height: calc(100vh - 7.75rem);
+  height: calc(90vh - 7.75rem);
 }
 
 .slide__background-image {
@@ -154,7 +155,7 @@ ul {
   color: #fff;
 }
 
-#counter {
+.counter {
   background-color: var(--color-primary);
   color: #fff;
   text-transform: uppercase;
@@ -164,7 +165,7 @@ ul {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   place-items: center;
-  padding: 4.375rem 1rem;
+  padding: 4.375rem 0;
 }
 
 .counter__container h3 {
