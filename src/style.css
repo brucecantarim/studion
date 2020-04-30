@@ -177,6 +177,10 @@ ul {
 }
 
 .institutional {
+  background-color: #fff;
+}
+
+.institutional__container {
   display: grid;
   grid-template-columns: auto auto;
   gap: 3.125rem;
@@ -220,11 +224,25 @@ ul {
 }
 
 .quote {
-  background-image: url(./images/parallax.jpg);
+  /* background-image: url(./images/parallax.jpg); */
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+}
+
+.quote__image {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  z-index: -1;
+
+  transform: translateX(-50%);
+
+  height: 100vh;
+  width: auto;
+
+
 }
 
 .quote__container {
