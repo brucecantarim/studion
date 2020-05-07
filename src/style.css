@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Roboto&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/fontawesome.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css');
 
 * {
   box-sizing: border-box;
@@ -84,6 +86,7 @@ ul {
 }
 
 .logo-studion__subtitle {
+  display: block;
   font-size: 0.875rem;
   font-weight: 300;
 }
@@ -111,8 +114,14 @@ ul {
 
 .slide__copy {
   position: absolute;
-  top: 6.25rem;
-  left: 50vw;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  display: grid;
+  padding-left: 50vw;
+  align-items: center;
 }
 
 .slide__copy h6 {
@@ -120,6 +129,7 @@ ul {
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.1875rem;
+  margin: 0;
 }
 
 .slide__copy h2 {
@@ -265,4 +275,86 @@ ul {
   color: var(--color-copy);
   border-color: var(--color-copy);
   background: unset;
+}
+
+.footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+  border-bottom: 0.1rem solid #FFF3;
+  padding: 5rem 0;
+}
+
+.footer .logo-studion {
+  justify-self: start;
+  margin: 0;
+}
+
+.footer__form {
+  display: grid;
+  grid-template-columns: 9ch auto;
+  gap: 1.375rem;
+  align-items: center;
+}
+
+.footer__form label {
+  font-size: .875rem;
+  font-weight: 300;
+  line-height: 1rem;
+}
+
+.footer__form__email {
+  display: grid;
+  grid-template-columns: auto 3.375rem;
+}
+
+.footer__form input {
+  background-color: var(--color-primary);
+  border: unset;
+  font-size: .875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1rem;
+  color: #000;
+}
+
+.footer__form input::placeholder {
+  color: #000;
+}
+
+.footer__form button {
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+
+.footer__form button:hover {
+  background-color: #000;
+  color: #FFF;
+}
+
+.footer__social {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: .5rem;
+  justify-self: end;
+}
+
+.footer__social a,
+.footer__social a:hover,
+.footer__social a:visited {
+  color: white;
+}
+
+.footer__social .fa-twitter {
+  color: #000;
+}
+
+.footer p {
+  margin: 2.5rem 0;
 }
