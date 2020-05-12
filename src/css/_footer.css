@@ -1,0 +1,81 @@
+.footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+  border-bottom: 0.1rem solid #fff3;
+  padding: 5rem 0;
+}
+
+.footer .logo-studion {
+  justify-self: start;
+  margin: 0;
+}
+
+.footer__form {
+  display: grid;
+  grid-template-columns: 9ch auto;
+  gap: 1.375rem;
+  align-items: center;
+}
+
+.footer__form label {
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 1rem;
+}
+
+.footer__form__email {
+  display: grid;
+  grid-template-columns: auto 3.375rem;
+}
+
+.footer__form input {
+  background-color: var(--color-primary);
+  border: unset;
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1rem;
+  color: #000;
+}
+
+.footer__form input::placeholder {
+  color: #000;
+}
+
+.footer__form button {
+  cursor: pointer;
+  transition: 0.3s all ease;
+}
+
+.footer__form button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.footer__social {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 0.5rem;
+  justify-self: end;
+}
+
+.footer__social a,
+.footer__social a:hover,
+.footer__social a:visited {
+  color: white;
+}
+
+.footer__social .fa-twitter {
+  color: #000;
+}
+
+.footer p {
+  margin: 2.5rem 0;
+}
