@@ -1,0 +1,35 @@
+.hero {
+  position: relative;
+  height: 34.625rem;
+}
+
+.hero__background {
+  position: absolute;
+  z-index: -1;
+  object-fit: contain;
+  object-position: center;
+}
+
+.hero__copy {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50vw;
+  padding: 7rem 1.875rem;
+}
+
+.hero__copy h2 {
+  margin: 0;
+  margin-bottom: 3rem;
+  font-size: 7.5rem;
+  line-height: 7.5rem;
+  letter-spacing: -0.3125rem;
+  color: var(--color-primary);
+}
+
+.hero__copy p {
+  margin: 0;
+  font-size: 0.9375rem;
+  line-height: 1.875rem;
+  color: var(--color-copy--alt);
+}
