@@ -1,0 +1,18 @@
+.logo-studion {
+  font-size: 2.375rem;
+  font-weight: 900;
+  line-height: 1ch; /* relativa ao tamanho da altura do glifo 0 da fonte */
+  text-transform: uppercase;
+  text-align: right;
+}
+
+.logo-studion__subtitle {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 300;
+}
+
+.logo-studion a {
+  text-decoration: none;
+  color: white;
+}
