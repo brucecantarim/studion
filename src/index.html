@@ -3,6 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
     <title>Studion</title>
   </head>
@@ -45,7 +53,7 @@
     </nav>
 
     <header>
-      <div id="slider">
+      <div class="slider">
         <div class="slide">
           <img
             class="slide__background-image"
@@ -59,6 +67,40 @@
                 setembro às 19h
               </h6>
               <h2><span class="copy--primary">Creative</span> Minds</h2>
+              <button class="btn btn--slide">Saiba Mais</button>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <img
+            class="slide__background-image"
+            src="./images/banner2.jpg"
+            alt="Studion Banner"
+          />
+          <div class="slide__copy">
+            <div class="slide__copy__container">
+              <h6>
+                <span class="copy--primary">Próximo evento</span> - Dia 25 de
+                setembro às 19h
+              </h6>
+              <h2><span class="copy--primary">FEST</span> FORWARD</h2>
+              <button class="btn btn--slide">Saiba Mais</button>
+            </div>
+          </div>
+        </div>
+        <div class="slide">
+          <img
+            class="slide__background-image"
+            src="./images/banner3.jpg"
+            alt="Studion Banner"
+          />
+          <div class="slide__copy">
+            <div class="slide__copy__container">
+              <h6>
+                <span class="copy--primary">Próximo evento</span> - Dia 25 de
+                setembro às 19h
+              </h6>
+              <h2><span class="copy--primary">SHOW</span> EVENT</h2>
               <button class="btn btn--slide">Saiba Mais</button>
             </div>
           </div>
@@ -119,7 +161,8 @@
         <div class="container quote__container">
           <div class="quote__copy">
             <h6>
-              Você informa a temática e nós planejamos um evento com tecnologia e
+              Você informa a temática e nós planejamos um evento com tecnologia
+              e
             </h6>
             <h2><span class="copy--primary">Muito+ </span>Diversão</h2>
             <button class="btn btn--quote">Fazer cotação</button>
@@ -129,7 +172,6 @@
     </main>
 
     <footer class="footer">
-      
       <div class="container footer__container">
         <h2 class="logo-studion">
           Studi<span class="copy--primary">on</span>
@@ -139,7 +181,7 @@
           <label for="email">receba news e promoções</label>
           <div class="footer__form__email">
             <input id="email" type="email" placeholder="email" />
-            <button type="submit">
+            <button class="footer__form-button" type="submit">
               <i class="fas fa-paper-plane fa-2x"></i>
             </button>
           </div>
@@ -147,7 +189,7 @@
         <ul class="footer__social">
           <li>
             <a href="https://facebook.com/" target="_blank">
-              <i class='fab fa-facebook fa-2x'></i>
+              <i class="fab fa-facebook fa-2x"></i>
             </a>
           </li>
           <li>
@@ -167,8 +209,16 @@
       </div>
 
       <p>
-        <small>Studi<span class="copy--primary">ON</span> - Todos os direitos reservados.</small>
+        <small
+          >Studi<span class="copy--primary">ON</span> - Todos os direitos
+          reservados.</small
+        >
       </p>
     </footer>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
