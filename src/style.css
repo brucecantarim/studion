@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;900&family=Roboto&display=swap");
 
 * {
   box-sizing: border-box;
 }
 
 :root {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 16px;
   --color-copy: #333;
   --color-primary: #ffc500;
@@ -181,7 +181,7 @@ ul {
   grid-template-columns: auto auto;
   gap: 3.125rem;
   align-items: center;
-  padding: 4.375rem;
+  padding: 4.375rem 0;
 }
 
 .institutional__image {
@@ -189,7 +189,7 @@ ul {
 }
 
 .institutional__copy {
-  padding: 0 1.875rem;
+  padding: 0 1.875rem 0 0;
 }
 
 .institutional__copy h6 {
@@ -206,10 +206,9 @@ ul {
 }
 
 .institutional p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 1.0625rem;
   line-height: 1.6875rem;
-  margin-bottom: 0;
   margin-bottom: 2.5rem;
 }
 
