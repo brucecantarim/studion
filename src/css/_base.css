@@ -2,10 +2,25 @@
   box-sizing: border-box;
 }
 
+/* Mobile */
 :root {
   font-family: "Montserrat", sans-serif;
-  font-size: 16px;
+  font-size: 4.25vw;
   color: var(--color-copy);
+}
+
+/* Tablet */
+@media screen and (min-width: 720px) {
+  :root {
+    font-size: 2.25vw;
+  }
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+  :root {
+    font-size: 16px;
+  }
 }
 
 body {
