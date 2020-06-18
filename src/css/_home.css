@@ -30,12 +30,12 @@
 }
 
 .slick-arrow {
-  display: none;
+  visibility: hidden;
 }
 
 @media screen and (min-width: 1280px) {
   .slick-arrow {
-    display: block;
+    visibility: visible;
   }
 }
 
@@ -145,11 +145,17 @@
 }
 
 .institutional__image {
-  max-width: 550px;
+  max-width: 100vw;
+}
+
+@media screen and (min-width: 1280px) {
+  .institutional__image {
+    max-width: 550px;
+  }
 }
 
 .institutional__copy {
-  padding: 0 0 1.875rem 0; /* mobile */
+  padding: 0 1rem 1.875rem 1rem; /* mobile */
 }
 
 /* Desktop */
@@ -182,26 +188,46 @@
 
 .quote {
   background-image: url(../images/parallax.jpg);
-  background-attachment: fixed;
   background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+  background-size: auto 40%;
+  background-position: 40% top;
+}
+
+@media screen and (min-width: 720px) {
+  .quote {
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 .quote__container {
   display: grid;
-  align-items: center;
+  align-items: end;
   justify-items: end;
   min-height: 80vh;
 }
 
+@media screen and (min-width: 720px) {
+  .quote__container {
+    align-items: center;
+  }
+}
+
 .quote__copy {
   background-color: #fff;
-  padding: 5.625rem 4.375rem;
+  padding: 1rem;
+  padding-bottom: 4rem;
+}
+
+@media screen and (min-width: 1280px) {
+  .quote__copy {
+    padding: 5.625rem 4.375rem;
+  }
 }
 
 .quote__copy h6 {
-  font-size: 0.9375rem;
+  font-size: 0.8rem;
   font-weight: 400;
   letter-spacing: 0.1875rem;
   line-height: 1.4375rem;
@@ -211,8 +237,8 @@
 }
 
 .quote__copy h2 {
-  font-size: 5rem;
-  line-height: 5rem;
+  font-size: 4rem;
+  line-height: 4rem;
   text-transform: uppercase;
   letter-spacing: -0.1875rem;
   margin: 1.875rem 0;
@@ -220,4 +246,15 @@
 
 .quote__copy h2 span {
   display: block;
+}
+
+@media screen and (min-width: 1280px) {
+  .quote__copy h6 {
+    font-size: 0.9375rem;
+  }
+
+  .quote__copy h2 {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
 }
