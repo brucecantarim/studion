@@ -5,6 +5,7 @@
   "main": "src/index.html",
   "scripts": {
     "start": "npx live-server src/ --port=3000",
+    "serve": "cd src && npx ngrok http 80",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

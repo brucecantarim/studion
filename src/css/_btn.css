@@ -21,6 +21,19 @@
   color: #fff;
 }
 
+.btn--institutional,
+.btn--quote {
+  display: block;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 1280px) {
+  .btn--institutional,
+  .btn--quote {
+    display: inline;
+  }
+}
+
 .btn--institutional:hover,
 .btn--contact:hover {
   color: var(--color-copy);
