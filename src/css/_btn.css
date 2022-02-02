@@ -33,7 +33,7 @@
 }
 
 .btn--quote {
-  color: var(--color-copy);
-  border-color: var(--color-copy);
+  color: var(--color-copy--alt);
+  border-color: var(--color-copy--alt);
   background: unset;
 }

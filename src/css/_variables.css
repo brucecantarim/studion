@@ -1,6 +1,6 @@
 :root {
-  --color-copy: #333;
-  --color-copy--alt: #ccc;
+  --color-copy--alt: #333;
+  --color-copy: #ccc;
   --color-primary: #ffc500;
   --default-padding: 1rem;
 }

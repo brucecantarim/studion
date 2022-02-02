@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <link rel="stylesheet" href="style.css" />
     <title>Studion</title>
   </head>
@@ -45,7 +47,7 @@
     </nav>
 
     <header>
-      <div id="slider">
+      <div class="slider">
         <div class="slide">
           <img
             class="slide__background-image"
@@ -63,7 +65,42 @@
             </div>
           </div>
         </div>
+      
+      <div class="slide">
+        <img
+          class="slide__background-image"
+          src="./images/banner2.jpg"
+          alt="Studion Banner"
+        />
+        <div class="slide__copy">
+          <div class="slide__copy__container">
+            <h6>
+              <span class="copy--primary">Próximo evento</span> - Dia 25 de
+              setembro às 19h
+            </h6>
+            <h2><span class="copy--primary">FEST</span> FORWARD</h2>
+            <button class="btn btn--slide">Saiba Mais</button>
+          </div>
+        </div>
       </div>
+      <div class="slide">
+        <img
+          class="slide__background-image"
+          src="./images/banner3.jpg"
+          alt="Studion Banner"
+        />
+        <div class="slide__copy">
+          <div class="slide__copy__container">
+            <h6>
+              <span class="copy--primary">Próximo evento</span> - Dia 25 de
+              setembro às 19h
+            </h6>
+            <h2><span class="copy--primary">SHOW</span> EVENT</h2>
+            <button class="btn btn--slide">Saiba Mais</button>
+          </div>
+        </div>
+      </div>
+    </div>
     </header>
 
     <main>
@@ -139,7 +176,7 @@
           <label for="email">receba news e promoções</label>
           <div class="footer__form__email">
             <input id="email" type="email" placeholder="email" />
-            <button type="submit">
+            <button class="footer__form-button" type="submit">
               <i class="fas fa-paper-plane fa-2x"></i>
             </button>
           </div>
@@ -170,5 +207,11 @@
         <small>Studi<span class="copy--primary">ON</span> - Todos os direitos reservados.</small>
       </p>
     </footer>
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script src="./script.js"></script>
   </body>
 </html>

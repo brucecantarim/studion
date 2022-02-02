@@ -1,6 +1,32 @@
-#slider {
+.slider {
   background-color: #000;
   color: #fff;
+}
+
+.slider__prev-arrow,
+.slider__next-arrow {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 5px solid #fff;
+  border-right: unset;
+  border-bottom: unset;
+  opacity: 0.7;
+}
+
+.slider__prev-arrow {
+  left: 1rem;
+  z-index: 1;
+  transform: rotate(-45deg);
+}
+
+.slider__next-arrow {
+  right: 1rem;
+  transform: rotate(130deg);
+}
+
+.slider__next-arrow::before,
+.slider__prev-arrow::before {
+  content: '';
 }
 
 .slide {
@@ -36,6 +62,7 @@
 }
 
 .slide__copy h2 {
+  color:#fff;
   font-size: 6.25rem;
   text-transform: uppercase;
   line-height: 6.25rem;
@@ -80,6 +107,7 @@
 }
 
 .institutional__copy {
+  color: #000;
   padding: 0 1.875rem;
 }
 
@@ -120,6 +148,7 @@
 }
 
 .quote__copy {
+  color: var(--color-copy--alt);
   background-color: #fff;
   padding: 5.625rem 4.375rem;
 }

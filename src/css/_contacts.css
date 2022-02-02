@@ -35,10 +35,12 @@
 
 .contact__info__container,
 .contact__form__container {
+  color: var(--color-copy);
   width: 540px;
 }
 
 .contact__info__container {
+  color: var(--color-copy--alt);
   float: right;
   padding-right: 7.125rem;
 }
